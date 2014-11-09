@@ -16,6 +16,13 @@ html {
     line-height: 1.4;
 }
 
+#scene {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -80,12 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body, html {
-  padding: 10px;
+html {
+    background-color: #b7bec8;
 }
 
 section {
-  margin-top: 10px;
   max-width: 700px;
   color: black;
   background-color: white;

@@ -12,8 +12,18 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    <script src="js/vendor/parallax.min.js"></script>
   </head>
   <body>
+
+    <ul id="scene">
+      <li class="layer" data-depth="0.00"><img src="img/backgrounds/stripes1.svg"></li>
+      <li class="layer" data-depth="0.25"><img src="img/backgrounds/stripes2.svg"></li>
+      <li class="layer" data-depth="0.50"><img src="img/backgrounds/stripes3.svg"></li>
+      <li class="layer" data-depth="0.75"><img src="img/backgrounds/stripes4.svg"></li>
+      <li class="layer" data-depth="1.00"><img src="img/backgrounds/stripes5.svg"></li>
+    </ul>
+
     <header>
       <a href="/" title="miom RK">
         <img src="img/miom_rk.svg" height="200" alt="miom RK logo"/>
@@ -74,4 +84,7 @@
       </p>
     </section>
   </body>
+  <script>
+    new Parallax(document.getElementById('scene'));
+  </script>
 </html>
