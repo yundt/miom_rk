@@ -17,10 +17,9 @@ html {
 }
 
 #scene {
-  position: absolute;
+  position: fixed;
+  top: -60px;
   z-index: -1;
-  height: 100%;
-  width: 100%;
 }
 
 /*
