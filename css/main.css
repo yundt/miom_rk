@@ -103,12 +103,16 @@ ul#members li {
 
 .white {
   background-color: white;
+  -webkit-box-shadow: 0 0 0 3px #fff;
+  box-shadow: 0 0 0 3px #fff;
 }
 
 .cover {
   width: 200px;
   margin: 0 20px 20px 0;
   float: left;
+  -webkit-box-shadow: 2px 2px 5px;
+  box-shadow: 2px 2px 5px;
 }
 
 ul#services li {
