@@ -12,5 +12,30 @@ $dom.onready( function() {
     for(var i = 0; i < storeIds.length; i++) {
       mixpanel.track_links("#" + storeIds[i], "Clicked " + storeIds[i]);
     }
+
+    var trackIds = [
+      'tripppp', 'kc_bue', 'ttd','ev_mist'
+    ];
+
+    var events = [
+      SC.Widget.Events.PLAY,
+      SC.Widget.Events.PAUSE,
+      SC.Widget.Events.FINISH,
+      SC.Widget.Events.SEEK
+    ];
+
+    var getTrackingFunctionFor = function(event, trackId) {
+      return function() {
+        mixpanel.track("Track " + event, {track: trackId});
+      }
+    }
+
+    for(var i = 0; i < trackIds.length; i++) {
+      var widget = SC.Widget(trackIds[i]);
+
+      for(var j = 0; j < events.length; j++) {
+        widget.bind(events[j], getTrackingFunctionFor(events[j], trackIds[i]));
+      }
+    }
   }
 });
