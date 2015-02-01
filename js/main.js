@@ -5,8 +5,8 @@ $dom.onready( function() {
     mixpanel.track("Page view");
 
     var storeIds = [
-      'spotify', 'itunes', 'amazon','japanese_amazon',
-      'google_play', 'deezer', 'rdio'
+      'spotify', 'itunes', 'amazon', 'japanese_amazon',
+      'google_play', 'deezer', 'rdio', 'japanese_itunes'
     ];
 
     for(var i = 0; i < storeIds.length; i++) {
