@@ -14,7 +14,7 @@ $dom.onready( function() {
     }
 
     var trackIds = [
-      'tripppp', 'kc_bue', 'ttd','ev_mist'
+      'tripppp', 'waiting_white'
     ];
 
     var events = [
